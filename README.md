@@ -23,7 +23,7 @@ RED='\033[0;31m'
 BLUE='\033[0;34m'
 NC='\033[0m'
 echo
-echo -en "${RED}\e[3m❤ $(cat ~/.cache/quote.txt) ❤\e[0m${NC}"
+echo -en "${RED}\e[3m❤ $(cat ~/.cache/qwote.txt) ❤\e[0m${NC}"
 echo -en "\n${BLUE}\e[3m- $(cat ~/.cache/author.txt)\e[0m${NC}"
 echo
 ```
@@ -31,13 +31,13 @@ echo
 - Then do,
 ```bash
 $ qwotes
-Generating quote...
-Successfully generated quote!
+Generating qwote...
+Successfully generated qwote!
 ```
 
-Your quote should be visible now.
+Your qwote should be visible now.
 
-> For a new quote, simply run `qwotes` again and refresh your terminal:
+> For a new qwote, simply run `qwotes` again and refresh your terminal:
 ```bash
 $ qwotes && clear && source ~/.bashrc
 ```
