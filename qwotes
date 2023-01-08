@@ -7,7 +7,7 @@ NC='\033[0m'
 jq --help > /dev/null 2>&1
 if [ $? -eq 127 ]
 then
-    echo "fatal - Please install jq :("
+    echo "jq is not installed\nPlease install it from your distributions' package manager"
     exit 1
 fi
 
@@ -17,7 +17,7 @@ json=$(curl -s "https://api.quotable.io/random?maxLength=110")
 
 if [ -z "$json" ]
 then
-    echo -en "Cannot connect to host. :("
+    echo -en "Cannot connect to host."
     echo
 else
     echo $json | jq '.content' > $HOME/.cache/qwote.txt

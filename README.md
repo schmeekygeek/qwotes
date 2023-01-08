@@ -4,7 +4,7 @@ A simple Bash script to show qwotes on terminal startup... or anywhere :)
 
 ## Dependencies
 - `jq` Command line JSON parser.
-- `curl` (why did I even bother writing this lol)
+- `curl`
 
 ## Installation
 Make the script executable and place it anywhere in your `PATH`
